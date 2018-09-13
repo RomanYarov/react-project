@@ -68,7 +68,6 @@ config.devServer = {
   port: 3000,
   host: 'localhost',
   contentBase: path.resolve(__dirname.split('/config')[0], 'dist'),
-  // filename: '[name].[hash].js',
   compress: true,
   hot: true,
 };
