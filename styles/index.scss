@@ -4,10 +4,31 @@ html {
 }
 
 body {
-  // background-color: darkgray;
+  background-color: darkgray;
+}
+
+p {
+  color: rebeccapurple;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 ul {
-  // font-size: 16px;
-  // color: darkblue;
+  font-size: 16px;
+  color: darkblue;
+  list-style: none;
+  padding-left: 0;
+  
+  li {
+    text-transform: uppercase;
+
+    &.active {
+      color: crimson;
+    }
+  }
+}
+
+.contain {
+  text-align: center;
 }
