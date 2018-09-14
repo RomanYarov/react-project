@@ -1,14 +1,11 @@
 import React from 'react';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      listActive: ""
-    };
+  state = {
+    listActive: ""
   }
   
-  handleMouse(e, item: string) {
+  handleMouse = (e, item) => {
     e.preventDefault();
     
     this.setState({
@@ -17,7 +14,7 @@ class App extends React.Component {
   }
 
   render() {
-    const list = ["React 16", "Webpack 4", "ESLint", "Sass", "Autoprefixer"];
+    const list = ["React 16", "Webpack 4", "ESLint", "Sass", "Autoprefixer", "Babel^7"];
 
     return (
       <div className="contain">
